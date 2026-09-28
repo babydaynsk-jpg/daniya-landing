@@ -3,4 +3,4 @@ Allow: /
 Disallow: /brief.html
 Disallow: /privacy.html
 
-Sitemap: https://babydaynsk-jpg.github.io/daniya-landing/sitemap.xml
+Sitemap: https://daniya-mamaeva.ru/sitemap.xml

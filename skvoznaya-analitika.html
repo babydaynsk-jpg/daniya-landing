@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src https://forms.yandex.ru; form-action 'self' https://forms.yandex.ru; connect-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сквозная аналитика для собственника: что настроить - Дания Мамаева</title>
+<meta name="description" content="Сквозная аналитика без лишней сложности: UTM-метки, цели в Яндекс Метрике, коллтрекинг, CRM и связь с оплатой. Что настроить и какие отчёты смотреть собственнику.">
+<link rel="canonical" href="https://daniya-mamaeva.ru/skvoznaya-analitika.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Сквозная аналитика для собственника: что настроить, чтобы видеть, какой канал приносит деньги">
+<meta property="og:description" content="Что настроить, чтобы видеть, какой рекламный канал приносит деньги, а не только заявки.">
+<meta property="og:url" content="https://daniya-mamaeva.ru/skvoznaya-analitika.html">
+<meta property="og:site_name" content="Дания Мамаева">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Сквозная аналитика для собственника: что настроить, чтобы видеть, какой канал приносит деньги",
+  "description": "Что настроить, чтобы видеть, какой рекламный канал приносит деньги, а не только заявки.",
+  "datePublished": "2026-09-28",
+  "dateModified": "2026-09-28",
+  "inLanguage": "ru-RU",
+  "mainEntityOfPage": "https://daniya-mamaeva.ru/skvoznaya-analitika.html",
+  "author": {
+    "@type": "Person",
+    "name": "Дания Мамаева",
+    "jobTitle": "Маркетолог",
+    "url": "https://daniya-mamaeva.ru/",
+    "knowsAbout": [
+      "сквозная аналитика",
+      "Яндекс Метрика",
+      "UTM-метки",
+      "коллтрекинг",
+      "CRM"
+    ],
+    "sameAs": [
+      "https://t.me/daniya_mamaeva"
+    ]
+  }
+}
+</script>
+<style>
+  :root{--bg:#FAF7F2;--card:#FFFFFF;--line:#E7E0D5;--ink:#1F1D1B;--muted:#57524B;--soft:#6E685F;--accent:#C8235A;--tint:#FBEAF0;}
+  *{box-sizing:border-box;margin:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--ink);font-family:"Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;}
+  a{color:var(--accent);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 20px;}
+  header{border-bottom:1px solid var(--line);background:rgba(250,247,242,0.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 20px;max-width:820px;margin:0 auto;}
+  .logo{font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--ink);}
+  .logo b{color:var(--accent);font-weight:700;}
+  .back{font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;}
+  .crumbs{display:flex;gap:18px;flex-wrap:wrap;padding-top:24px;font-size:13.5px;}
+  .crumbs a{font-weight:600;text-decoration:none;}
+  .hero{padding:clamp(26px,5vw,50px) 0 clamp(18px,3vw,30px);}
+  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);}
+  h1{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(27px,5vw,44px);line-height:1.1;letter-spacing:-.02em;text-transform:uppercase;margin-top:16px;text-wrap:balance;}
+  h1 .hw{font-family:"Great Vibes",cursive;font-weight:400;font-size:1.35em;text-transform:none;color:var(--accent);display:inline-block;line-height:1;}
+  .lead{margin-top:22px;font-size:clamp(16px,1.5vw,18.5px);line-height:1.65;color:var(--muted);}
+  .byline{margin-top:24px;display:flex;align-items:center;gap:12px;font-size:14px;color:var(--soft);flex-wrap:wrap;}
+  .byline .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);}
+  article h2{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(20px,3vw,27px);line-height:1.22;letter-spacing:-.01em;margin-top:clamp(34px,5vw,52px);text-wrap:balance;}
+  article h3{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(16px,2vw,19px);line-height:1.3;margin-top:26px;}
+  article p{margin-top:15px;font-size:clamp(15.5px,1.4vw,17px);line-height:1.7;color:var(--ink);}
+  article p.q{color:var(--muted);}
+  article ul,article ol{margin-top:15px;padding-left:22px;}
+  article li{margin-top:9px;font-size:clamp(15px,1.35vw,16.5px);line-height:1.62;}
+  article li b{color:var(--ink);}
+  .tldr{margin-top:18px;background:var(--tint);border-radius:12px;padding:15px 18px;font-size:clamp(14.5px,1.3vw,16px);line-height:1.55;}
+  .tldr b{display:block;color:var(--accent);text-transform:uppercase;font-size:11px;letter-spacing:.16em;margin-bottom:5px;}
+  .tbl{overflow-x:auto;margin-top:20px;}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;}
+  th,td{border:1px solid var(--line);padding:10px 13px;text-align:left;vertical-align:top;line-height:1.5;}
+  th{background:var(--tint);font-weight:700;color:var(--ink);}
+  .callout{margin:clamp(24px,4vw,38px) 0;background:var(--tint);border-radius:14px;padding:clamp(20px,3vw,28px);font-size:clamp(15px,1.4vw,17px);line-height:1.6;}
+  .callout b{color:var(--ink);}
+  .money{margin-top:18px;border-left:3px solid var(--accent);padding:12px 0 12px 16px;font-size:15px;line-height:1.6;color:var(--ink);background:linear-gradient(90deg,rgba(200,35,90,.05),transparent);}
+  .money b{color:var(--accent);text-transform:uppercase;font-size:11px;letter-spacing:.14em;display:block;margin-bottom:5px;}
+  .cta{margin:clamp(32px,5vw,56px) 0 0;background:var(--accent);color:#fff;border-radius:16px;padding:clamp(28px,4vw,44px);text-align:center;}
+  .cta h2{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(20px,2.6vw,30px);line-height:1.15;text-transform:uppercase;color:#fff;margin:0;}
+  .cta p{margin-top:14px;font-size:clamp(14.5px,1.4vw,16.5px);line-height:1.6;color:#fff;opacity:.95;max-width:52ch;margin-left:auto;margin-right:auto;}
+  .btns{margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .btn{background:#151515;color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;letter-spacing:.05em;text-transform:uppercase;padding:15px 26px;border-radius:8px;}
+  .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.55);}
+  .sources{margin-top:clamp(32px,5vw,52px);border-top:1px solid var(--line);padding-top:24px;}
+  .sources h2{font-family:Unbounded,sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.02em;}
+  .sources ul{margin-top:14px;padding-left:20px;}
+  .sources li{margin-top:8px;font-size:14px;color:var(--muted);line-height:1.55;}
+  .sources a{text-decoration:underline;text-underline-offset:3px;}
+  footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;font-size:13px;color:var(--soft);margin-top:clamp(32px,5vw,56px);}
+  footer a{color:var(--soft);text-decoration:underline;text-underline-offset:3px;}
+  @media print{
+    @page{size:A4;margin:16mm 14mm;}
+    header,.back,.crumbs,.btns,.cta{display:none!important;}
+    body{background:#fff;}
+    .callout,.money,table{break-inside:avoid;box-shadow:none;}
+    a{color:var(--ink);text-decoration:none;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="./">Дания <b>/</b> Мамаева</a>
+    <a class="back" href="./">← На главную</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="crumbs">
+    <a href="articles.html">← Статьи</a>
+    <a href="./">← На главную</a>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">Разбор · аналитика</p>
+    <h1>Сквозная <span class="hw">аналитика</span> для собственника</h1>
+    <p class="lead">Подрядчик присылает отчёт: заявки дешевеют, всё отлично. А денег в кассе больше не становится. Так бывает, когда реклама и продажи живут в разных системах. Рассказываю, что настроить, чтобы видеть путь от рубля в рекламе до рубля в кассе, и какие отчёты собственнику смотреть раз в неделю.</p>
+    <div class="byline"><span class="dot"></span>Дания Мамаева · маркетолог, который считает как собственник · 28 сентября 2026</div>
+  </section>
+
+  <article>
+    <div class="callout">
+      <b>Коротко для тех, кто спешит:</b> сквозная аналитика связывает рекламный расход с фактической оплатой по каждому каналу. Минимальный набор: UTM-метки на всей рекламе, цели в Яндекс Метрике, учёт звонков, CRM с полем «источник» и отметка об оплате. Этого хватает, чтобы раз в неделю видеть выручку и окупаемость каждого канала. Дорогой сервис нужен не всегда.
+    </div>
+
+    <h2>Что такое сквозная аналитика и зачем она собственнику</h2>
+    <div class="tldr"><b>Коротко</b>Это учёт, при котором каждая оплата привязана к источнику, откуда пришёл клиент. Без неё видно, сколько потрачено, но не видно, что это принесло.</div>
+    <p>Обычная картина в малом бизнесе: расходы на рекламу видны в кабинетах, заявки видны в почте или CRM, деньги видны в банке. Но эти три места никак не связаны. Поэтому на вопрос «какой канал приносит деньги» отвечают по ощущениям.</p>
+    <p>Сквозная аналитика протягивает нитку через всю цепочку: клик, визит, заявка, сделка, оплата. Когда нитка есть, решения становятся простыми. Этот канал возвращает деньги с запасом, увеличиваем. Этот много лет «приносит заявки», но ни одна не оплачена, отключаем.</p>
+    <div class="money"><b>Пример-иллюстрация</b>Два канала, в каждый ушло по 50 000 ₽ и каждый дал 50 заявок по 1 000 ₽. По отчёту подрядчика они одинаковые. В CRM видно другое: из первого канала оплатили 10 заявок со средним чеком 15 000 ₽, это 150 000 ₽. Из второго оплатили 2 заявки, это 30 000 ₽. Цена заявки одна, а выручка отличается в пять раз.</div>
+
+    <h2>Минимальный набор: пять вещей, которые нужно настроить</h2>
+    <div class="tldr"><b>Коротко</b>UTM-метки, цели в Метрике, учёт звонков, источник в CRM и отметка об оплате. Всё остальное - надстройки.</div>
+    <ol>
+      <li><b>UTM-метки на всех рекламных ссылках.</b> Метка - это подпись в адресе ссылки: откуда пришёл человек, из какой кампании и объявления. Без меток Метрика видит только «реклама», а вам нужно знать, какая именно.</li>
+      <li><b>Цели в Яндекс Метрике.</b> Настраивайте цель на реальное действие: отправку формы, оформление заказа, клик по номеру телефона. Цель на «клик по кнопке» без отправки формы завышает результат.</li>
+      <li><b>Учёт звонков.</b> Если заметная часть клиентов звонит, без коллтрекинга вы не видите их источник. Коллтрекинг подменяет номер на сайте и показывает, с какого канала пришёл звонок.</li>
+      <li><b>CRM с полем «источник».</b> Каждая заявка попадает в CRM сразу с меткой канала. Если CRM нет, для начала хватит таблицы, но заполнять её нужно всегда, а не «когда есть время».</li>
+      <li><b>Отметка об оплате.</b> Сделка в CRM закрывается суммой, которая реально пришла. Именно этот шаг чаще всего пропускают, и вся аналитика обрывается на заявке.</li>
+    </ol>
+    <p class="q">Если сайт собирает данные посетителей, нужны согласие на cookie и политика обработки персональных данных. На своём сайте я запускаю Метрику только после согласия посетителя: это требование закона о персональных данных, а не формальность.</p>
+
+    <div class="callout">
+      <b>В своём канале показываю, как читаю такие отчёты:</b> на что смотрю в первую очередь и какие решения принимаю по цифрам. <a href="https://t.me/daniya_mamaeva" rel="noopener">Заглянуть в Telegram-канал →</a>
+    </div>
+
+    <h2>Какие отчёты смотреть собственнику раз в неделю</h2>
+    <div class="tldr"><b>Коротко</b>Одна таблица по каналам: расход, заявки, оплаты, выручка, окупаемость. Пять столбцов и пять минут в понедельник.</div>
+    <p>Собственнику не нужны десятки графиков. Нужна одна сводка, по которой можно принять решение. Я присылаю клиентам такую каждый понедельник:</p>
+    <div class="tbl">
+    <table>
+      <thead><tr><th>Столбец</th><th>Откуда берётся</th><th>Какой вопрос закрывает</th></tr></thead>
+      <tbody>
+        <tr><td>Расход</td><td>Рекламные кабинеты</td><td>Сколько потратили на канал</td></tr>
+        <tr><td>Заявки</td><td>Метрика и CRM</td><td>Сколько обращений принёс канал</td></tr>
+        <tr><td>Оплаты</td><td>CRM или учёт продаж</td><td>Сколько заявок стали деньгами</td></tr>
+        <tr><td>Выручка и маржа</td><td>CRM, учёт, себестоимость</td><td>Сколько денег пришло и сколько осталось</td></tr>
+        <tr><td>ROMI</td><td>Считается из столбцов выше</td><td>Окупается канал или нет</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Как считать последний столбец и почему считать нужно по марже, а не по обороту, подробно разобрала в статье про <a href="romi-kak-schitat.html">окупаемость рекламы</a>.</p>
+
+    <h2>Готовый сервис или таблица: что выбрать</h2>
+    <div class="tldr"><b>Коротко</b>Пока каналов два-три и заявок немного, хватает связки Метрика + CRM + таблица. Платные сервисы сквозной аналитики окупаются, когда каналов и заявок становится много.</div>
+    <p>Сервисы сквозной аналитики собирают данные из кабинетов, Метрики и CRM автоматически и строят отчёты сами. Это удобно, но это ещё одна ежемесячная подписка и время на внедрение. Для небольшого бизнеса я обычно начинаю с простого: связка Метрики с CRM и еженедельная сводка в таблице. Когда ручная сводка начинает занимать больше часа в неделю, пора автоматизировать.</p>
+    <p>Главное не инструмент, а дисциплина. Самый дорогой сервис ничего не покажет, если менеджеры не отмечают оплаты, а в рекламе половина ссылок без меток.</p>
+
+    <h2>Частые ошибки, из-за которых аналитика врёт</h2>
+    <div class="tldr"><b>Коротко</b>Ссылки без меток, цели на клик вместо отправки, неучтённые звонки, пустое поле «источник» и оплаты, которые не возвращаются в систему.</div>
+    <ul>
+      <li><b>Часть рекламы без UTM-меток.</b> Трафик уходит в «прямые заходы» или «прочее», и лучший канал может выглядеть бесполезным.</li>
+      <li><b>Цель стоит на клик по кнопке.</b> Человек нажал «Оставить заявку», передумал и закрыл форму, а цель засчитана.</li>
+      <li><b>Звонки не отслеживаются.</b> Если половина клиентов звонит, вы видите только половину картины.</li>
+      <li><b>Источник заполняют вручную «по памяти».</b> Через неделю менеджер уже не помнит, откуда клиент.</li>
+      <li><b>Офлайн-оплаты не попадают в систему.</b> Счёт оплатили по безналу, а в CRM сделка висит открытой. Канал выглядит убыточным, хотя на деле приносит деньги.</li>
+      <li><b>Сравнивают разные периоды.</b> В B2B оплата приходит через недели после заявки. Смотрите окупаемость на отрезке, где сделки успевают закрыться.</li>
+    </ul>
+
+    <h2>С чего начать на этой неделе</h2>
+    <div class="tldr"><b>Коротко</b>Проверьте метки, цели и поле «источник». Уже это закрывает большую часть слепых зон.</div>
+    <ul>
+      <li>Откройте свою рекламу и проверьте, у всех ли ссылок есть UTM-метки.</li>
+      <li>Зайдите в Метрику и посмотрите, на что настроены цели: на отправку или на клик.</li>
+      <li>Попросите менеджеров неделю записывать источник каждой заявки и сумму каждой оплаты.</li>
+      <li>В понедельник сведите всё в таблицу из пяти столбцов выше.</li>
+    </ul>
+    <p>После первой же такой сводки обычно находится канал, который тратит деньги и ничего не возвращает. Как понять, на каком шаге теряются остальные деньги, разбираю в статье про <a href="voronka-prodazh.html">воронку продаж</a>.</p>
+
+    <div class="sources">
+      <h2>Источники</h2>
+      <ul>
+        <li>Яндекс Метрика, справка по целям, UTM-меткам и интеграции с CRM: <a href="https://yandex.ru/support/metrica/" rel="noopener">yandex.ru/support/metrica</a></li>
+        <li>Яндекс Директ, справка по UTM-меткам: <a href="https://yandex.ru/support/direct/" rel="noopener">yandex.ru/support/direct</a></li>
+        <li>Федеральный закон № 152-ФЗ «О персональных данных»: <a href="https://www.consultant.ru/document/cons_doc_LAW_61801/" rel="noopener">consultant.ru</a></li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <h2>Хотите видеть, какой канал приносит деньги?</h2>
+      <p>На бесплатной диагностике за 20-30 минут посмотрю, как у вас собираются данные, и покажу, где аналитика обрывается. Для подробного разбора и плана настройки заполните бриф.</p>
+      <div class="btns">
+        <a class="btn" href="brief.html">Отправить бриф на работу</a>
+        <a class="btn ghost" href="https://t.me/daniya_mamaeva" rel="noopener">Написать в Telegram</a>
+        <a class="btn ghost" href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU" rel="noopener">Написать в MAX</a>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  © 2026 Дания Мамаева · самозанятая · ИНН 540403873078 · <a href="privacy.html">Политика обработки персональных данных</a>
+</footer>
+</body>
+</html>
