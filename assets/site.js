@@ -50,3 +50,8 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", showBanner);
   else showBanner();
 })();
+
+/* print / save-as-PDF buttons (replaces inline onclick, which the CSP forbids) */
+document.addEventListener("click", function (e) {
+  if (e.target.closest && e.target.closest("[data-print]")) window.print();
+});

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://mc.yandex.ru https://yastatic.net; frame-src https://forms.yandex.ru https://mc.yandex.ru; form-action 'self' https://forms.yandex.ru; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://mc.yandex.ru https://yastatic.net; frame-src blob: https://forms.yandex.ru https://mc.yandex.ru https://mc.yandex.com; child-src blob: https://mc.yandex.ru; worker-src blob:; form-action 'self' https://forms.yandex.ru; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Заполните бриф для работы — Дания Мамаева</title>
@@ -85,18 +85,7 @@
   © 2026 Дания Мамаева · самозанятая · ИНН 540403873078 · <a href="./privacy.html">Политика обработки персональных данных</a>
 </footer>
 
-<script>
-  // Когда встроена Яндекс Форма (в #yaform есть iframe) — прячем запасной блок.
-  (function(){
-    try{
-      var slot=document.getElementById('yaform');
-      if(slot && slot.querySelector('iframe')){
-        var fb=document.getElementById('fallback');
-        if(fb) fb.style.display='none';
-      }
-    }catch(e){}
-  })();
-</script>
+<script src="assets/quiz.js" defer></script>
 <script src="assets/site.js" defer></script>
 <script src="assets/goals.js" defer></script>
 </body>
