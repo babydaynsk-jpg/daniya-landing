@@ -24,59 +24,21 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@700;800&family=Great+Vibes&display=swap" rel="stylesheet">
-<style>
-  :root{--bg:#FAF7F2;--card:#FFFFFF;--line:#E7E0D5;--ink:#1F1D1B;--muted:#57524B;--soft:#6E685F;--accent:#C8235A;--tint:#FBEAF0;}
-  *{box-sizing:border-box;margin:0;}
-  html{scroll-behavior:smooth;}
-  body{background:var(--bg);color:var(--ink);font-family:"Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;}
-  a{color:var(--accent);}
-  .wrap{max-width:820px;margin:0 auto;padding:0 20px;}
-  header{border-bottom:1px solid var(--line);background:rgba(250,247,242,0.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 20px;max-width:820px;margin:0 auto;}
-  .logo{font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--ink);}
-  .logo b{color:var(--accent);font-weight:700;}
-  .back{font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;}
-  .hero{padding:clamp(40px,7vw,80px) 0 clamp(24px,4vw,40px);}
-  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);}
-  h1{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(28px,5.2vw,46px);line-height:1.1;letter-spacing:-.02em;text-transform:uppercase;margin-top:16px;text-wrap:balance;}
-  h1 .hw{font-family:"Great Vibes",cursive;font-weight:400;font-size:1.35em;text-transform:none;color:var(--accent);display:inline-block;line-height:1;}
-  .lead{margin-top:22px;font-size:clamp(16px,1.5vw,18.5px);line-height:1.65;color:var(--muted);}
-  .byline{margin-top:24px;display:flex;align-items:center;gap:12px;font-size:14px;color:var(--soft);}
-  .byline .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);}
-  .callout{margin:clamp(24px,4vw,40px) 0;background:var(--tint);border-radius:14px;padding:clamp(20px,3vw,28px);font-size:clamp(15px,1.4vw,17px);line-height:1.6;}
-  .callout b{color:var(--ink);}
-  .item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:clamp(22px,3.4vw,34px);margin:16px 0;}
-  .num{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;padding:0 10px;border-radius:11px;background:var(--tint);color:var(--accent);font-family:Unbounded,sans-serif;font-weight:800;font-size:18px;}
-  .item h2{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(17px,2.1vw,22px);line-height:1.25;margin-top:16px;text-wrap:balance;}
-  .item p{margin-top:12px;font-size:clamp(14.5px,1.35vw,16px);line-height:1.62;color:var(--muted);}
-  .lbl{display:block;margin-top:16px;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);}
-  .lbl + p{margin-top:6px;}
-  .money{margin-top:14px;border-left:3px solid var(--accent);padding:8px 0 8px 16px;font-size:14.5px;color:var(--ink);background:linear-gradient(90deg,rgba(200,35,90,.05),transparent);}
-  .cta{margin:clamp(32px,5vw,56px) 0;background:var(--accent);color:#fff;border-radius:16px;padding:clamp(28px,4vw,44px);text-align:center;}
-  .cta h2{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(20px,2.6vw,30px);line-height:1.15;text-transform:uppercase;color:#fff;}
-  .cta p{margin-top:14px;font-size:clamp(14.5px,1.4vw,16.5px);line-height:1.6;color:#fff;opacity:.95;max-width:52ch;margin-left:auto;margin-right:auto;}
-  .btns{margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
-  .btn{background:#151515;color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;letter-spacing:.05em;text-transform:uppercase;padding:15px 26px;border-radius:8px;}
-  .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.55);}
-  footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;font-size:13px;color:var(--soft);}
-  footer a{color:var(--soft);text-decoration:underline;text-underline-offset:3px;}
-  @media print{
-    @page{size:A4;margin:16mm 14mm;}
-    header,.back,.btns{display:none!important;}
-    body{background:#fff;}
-    .item,.callout,.cta{break-inside:avoid;box-shadow:none;}
-    .cta{background:#fff;color:var(--ink);border:1px solid var(--line);}
-    .cta h2,.cta p{color:var(--ink);}
-    a{color:var(--ink);text-decoration:none;}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://daniya-mamaeva.ru/"}, {"@type": "ListItem", "position": 2, "name": "Статьи", "item": "https://daniya-mamaeva.ru/articles.html"}, {"@type": "ListItem", "position": 3, "name": "10 ошибок, которые сливают рекламный бюджет", "item": "https://daniya-mamaeva.ru/guide.html"}]}</script>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <header>
   <div class="bar">
-    <a class="logo" href="./">Дания <b>/</b> Мамаева</a>
-    <a class="back" href="./">← На главную</a>
+    <a class="logo" href="./">Дания Мамаева</a>
+    <nav class="navl" aria-label="Разделы">
+      <a href="./#about">Обо мне</a>
+      <a href="./#tariff">Тарифы</a>
+      <a href="./cases.html">Кейсы</a>
+      <a href="./articles.html">Статьи</a>
+    </nav>
+    <a class="pill" href="./#cta">Диагностика</a>
   </div>
 </header>
 
@@ -186,7 +148,7 @@
 </main>
 
 <footer>
-  © 2026 Дания Мамаева · самозанятая · ИНН 540403873078 · <a href="privacy.html">Политика обработки персональных данных</a>
+  © 2026 Дания Мамаева · самозанятая · ИНН 540403873078 · <a href="./privacy.html">Политика обработки персональных данных</a>
 </footer>
 <script src="assets/site.js" defer></script>
 </body>

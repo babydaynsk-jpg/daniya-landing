@@ -24,44 +24,9 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@700;800&family=Great+Vibes&display=swap" rel="stylesheet">
-<style>
-  :root{--bg:#FAF7F2;--card:#FFFFFF;--line:#E7E0D5;--ink:#1F1D1B;--muted:#57524B;--soft:#6E685F;--accent:#C8235A;--tint:#FBEAF0;}
-  *{box-sizing:border-box;margin:0;}
-  html{scroll-behavior:smooth;}
-  body{background:var(--bg);color:var(--ink);font-family:"Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;}
-  a{color:var(--accent);}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 20px;}
-  header{border-bottom:1px solid var(--line);background:rgba(250,247,242,0.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 20px;max-width:1000px;margin:0 auto;}
-  .logo{font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--ink);}
-  .logo b{color:var(--accent);}
-  .back{font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;}
-  .hero{padding:clamp(40px,7vw,80px) 0 clamp(20px,3vw,32px);}
-  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);}
-  h1{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(28px,5vw,44px);line-height:1.1;letter-spacing:-.02em;text-transform:uppercase;margin-top:16px;}
-  h1 .hw{font-family:"Great Vibes",cursive;font-weight:400;font-size:1.35em;text-transform:none;color:var(--accent);display:inline-block;line-height:1;}
-  .lead{margin-top:20px;font-size:clamp(15px,1.5vw,18px);line-height:1.65;color:var(--muted);max-width:64ch;}
-  .sec-h{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(20px,2.6vw,30px);line-height:1.15;letter-spacing:-.01em;text-transform:uppercase;margin-top:clamp(34px,5vw,56px);}
-  .sec-p{margin-top:12px;font-size:15px;line-height:1.65;color:var(--muted);max-width:64ch;}
-  .grid{margin:clamp(22px,3vw,32px) 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:clamp(16px,2vw,22px);}
-  .card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:clamp(22px,2.6vw,30px);text-decoration:none;color:inherit;transition:border-color .15s, transform .15s;}
-  a.card:hover{border-color:var(--accent);transform:translateY(-2px);}
-  .tag{align-self:flex-start;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--tint);border-radius:999px;padding:6px 12px;}
-  .card h2{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(16px,1.6vw,19px);line-height:1.25;margin-top:16px;}
-  .card p{margin-top:12px;font-size:14.5px;line-height:1.6;color:var(--muted);}
-  .card .more{margin-top:auto;padding-top:16px;font-size:13.5px;font-weight:600;color:var(--accent);}
-  .cs-wrap{margin-top:clamp(20px,3vw,30px);}
-  .cs-note{margin-top:12px;font-size:13.5px;line-height:1.6;color:var(--soft);}
-  .subscribe{margin:clamp(34px,5vw,60px) 0 clamp(24px,4vw,48px);background:var(--tint);border-radius:16px;padding:clamp(24px,3.4vw,40px);text-align:center;}
-  .subscribe h2{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(19px,2.4vw,28px);text-transform:uppercase;line-height:1.15;}
-  .subscribe p{margin-top:12px;color:var(--muted);max-width:52ch;margin-left:auto;margin-right:auto;}
-  .btns{margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
-  .btn{background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase;padding:14px 24px;border-radius:8px;}
-  .btn.dark{background:#151515;}
-  footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;font-size:13px;color:var(--soft);}
-  footer a{color:var(--soft);text-decoration:underline;text-underline-offset:3px;}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://daniya-mamaeva.ru/"}, {"@type": "ListItem", "position": 2, "name": "Кейсы и портфолио", "item": "https://daniya-mamaeva.ru/cases.html"}]}</script>
+<link rel="stylesheet" href="assets/site.css">
 <style id="dm-cs-css">
   [data-cs-track]::-webkit-scrollbar { display: none; }
   [data-cs-track] figure { margin: 0; }
@@ -79,8 +44,14 @@
 <body>
 <header>
   <div class="bar">
-    <a class="logo" href="./">Дания <b>/</b> Мамаева</a>
-    <a class="back" href="./">← На главную</a>
+    <a class="logo" href="./">Дания Мамаева</a>
+    <nav class="navl" aria-label="Разделы">
+      <a href="./#about">Обо мне</a>
+      <a href="./#tariff">Тарифы</a>
+      <a href="./cases.html">Кейсы</a>
+      <a href="./articles.html">Статьи</a>
+    </nav>
+    <a class="pill" href="./#cta">Диагностика</a>
   </div>
 </header>
 
@@ -168,7 +139,7 @@
 </main>
 
 <footer>
-  © 2026 Дания Мамаева · самозанятая · ИНН 540403873078 · <a href="privacy.html">Политика обработки персональных данных</a>
+  © 2026 Дания Мамаева · самозанятая · ИНН 540403873078 · <a href="./privacy.html">Политика обработки персональных данных</a>
 </footer>
 <script id="dm-cs-js">
 (function () {

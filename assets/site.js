@@ -23,9 +23,9 @@
     var box = document.createElement("div");
     box.setAttribute("role", "dialog");
     box.setAttribute("aria-label", "Согласие на использование cookie");
-    box.style.cssText = "position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483640;max-width:560px;background:#1F1D1B;color:#fff;border-radius:12px;padding:18px 20px;box-shadow:0 10px 30px rgba(0,0,0,.18);display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-family:'Golos Text',system-ui,sans-serif";
+    box.style.cssText = "position:fixed;right:16px;bottom:16px;left:16px;margin-left:auto;z-index:2147483640;max-width:420px;background:rgba(29,29,31,.92);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);color:#f5f5f7;border-radius:20px;padding:14px 14px 14px 20px;box-shadow:0 12px 40px rgba(0,0,0,.25);display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-family:'Golos Text',system-ui,sans-serif";
     var p = document.createElement("p");
-    p.style.cssText = "flex:1 1 280px;margin:0;font-size:14px;line-height:1.55;color:#E9E4DC";
+    p.style.cssText = "flex:1 1 280px;margin:0;font-size:13px;line-height:1.4;color:#f5f5f7";
     p.appendChild(document.createTextNode("Сайт использует cookie-файлы, чтобы корректно работать и анализировать посещаемость. Нажимая «Принять», вы соглашаетесь с использованием cookie и обработкой данных в соответствии с "));
     var a = document.createElement("a");
     a.href = "privacy.html";
@@ -36,7 +36,7 @@
     var b = document.createElement("button");
     b.type = "button";
     b.textContent = "Принять";
-    b.style.cssText = "flex:none;background:#C8235A;color:#fff;border:none;border-radius:6px;padding:12px 22px;font-family:inherit;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer";
+    b.style.cssText = "flex:none;background:#fff;color:#1d1d1f;border:none;border-radius:980px;padding:10px 20px;font-family:inherit;font-weight:600;font-size:14px;cursor:pointer";
     b.addEventListener("click", function () {
       try { localStorage.setItem("dm_cookie_ok", "1"); } catch (e) {}
       loadMetrika();
