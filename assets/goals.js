@@ -35,7 +35,7 @@
 
     // print / save PDF buttons (brief)
     var pr = t.closest("button");
-    if (pr && /print/.test(pr.getAttribute("onclick") || "")) { goal("brief_save_pdf"); return; }
+    if (pr && pr.hasAttribute("data-print")) { goal("brief_save_pdf"); return; }
 
     // accordions
     var sum = t.closest("summary");
