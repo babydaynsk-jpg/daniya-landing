@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /brief.html
-Disallow: /privacy.html
 
 Sitemap: https://daniya-mamaeva.ru/sitemap.xml
