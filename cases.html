@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src https://forms.yandex.ru; form-action 'self' https://forms.yandex.ru; connect-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кейсы и портфолио — Дания Мамаева</title>
+<meta name="description" content="Кейсы интернет-маркетолога Дании Мамаевой: разборы с цифрами в TenChat и примеры рекламных кампаний для онлайн-школ, интернет-магазинов и B2B.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FAF7F2;--card:#FFFFFF;--line:#E7E0D5;--ink:#1F1D1B;--muted:#57524B;--soft:#6E685F;--accent:#C8235A;--tint:#FBEAF0;}
+  *{box-sizing:border-box;margin:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--ink);font-family:"Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;}
+  a{color:var(--accent);}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px;}
+  header{border-bottom:1px solid var(--line);background:rgba(250,247,242,0.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 20px;max-width:1000px;margin:0 auto;}
+  .logo{font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--ink);}
+  .logo b{color:var(--accent);}
+  .back{font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;}
+  .hero{padding:clamp(40px,7vw,80px) 0 clamp(20px,3vw,32px);}
+  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);}
+  h1{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(28px,5vw,44px);line-height:1.1;letter-spacing:-.02em;text-transform:uppercase;margin-top:16px;}
+  h1 .hw{font-family:"Great Vibes",cursive;font-weight:400;font-size:1.35em;text-transform:none;color:var(--accent);display:inline-block;line-height:1;}
+  .lead{margin-top:20px;font-size:clamp(15px,1.5vw,18px);line-height:1.65;color:var(--muted);max-width:64ch;}
+  .sec-h{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(20px,2.6vw,30px);line-height:1.15;letter-spacing:-.01em;text-transform:uppercase;margin-top:clamp(34px,5vw,56px);}
+  .sec-p{margin-top:12px;font-size:15px;line-height:1.65;color:var(--muted);max-width:64ch;}
+  .grid{margin:clamp(22px,3vw,32px) 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:clamp(16px,2vw,22px);}
+  .card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:clamp(22px,2.6vw,30px);text-decoration:none;color:inherit;transition:border-color .15s, transform .15s;}
+  a.card:hover{border-color:var(--accent);transform:translateY(-2px);}
+  .tag{align-self:flex-start;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--tint);border-radius:999px;padding:6px 12px;}
+  .card h2{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(16px,1.6vw,19px);line-height:1.25;margin-top:16px;}
+  .card p{margin-top:12px;font-size:14.5px;line-height:1.6;color:var(--muted);}
+  .card .more{margin-top:auto;padding-top:16px;font-size:13.5px;font-weight:600;color:var(--accent);}
+  .cs-wrap{margin-top:clamp(20px,3vw,30px);}
+  .cs-note{margin-top:12px;font-size:13.5px;line-height:1.6;color:var(--soft);}
+  .subscribe{margin:clamp(34px,5vw,60px) 0 clamp(24px,4vw,48px);background:var(--tint);border-radius:16px;padding:clamp(24px,3.4vw,40px);text-align:center;}
+  .subscribe h2{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(19px,2.4vw,28px);text-transform:uppercase;line-height:1.15;}
+  .subscribe p{margin-top:12px;color:var(--muted);max-width:52ch;margin-left:auto;margin-right:auto;}
+  .btns{margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .btn{background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase;padding:14px 24px;border-radius:8px;}
+  .btn.dark{background:#151515;}
+  footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;font-size:13px;color:var(--soft);}
+  footer a{color:var(--soft);text-decoration:underline;text-underline-offset:3px;}
+</style>
+<style id="dm-cs-css">
+  [data-cs-track]::-webkit-scrollbar { display: none; }
+  [data-cs-track] figure { margin: 0; }
+  .dm-cs-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 1px solid #E7E0D5; background: rgba(255,255,255,.94); color: #1F1D1B; font-size: 20px; line-height: 1; cursor: pointer; box-shadow: 0 4px 14px rgba(31,29,27,.14); display: flex; align-items: center; justify-content: center; padding: 0; transition: background .15s, color .15s; }
+  .dm-cs-btn:hover { background: #C8235A; color: #fff; border-color: #C8235A; }
+  @media (max-width: 640px) { .dm-cs-btn { width: 36px; height: 36px; font-size: 17px; } }
+  .dm-lb { position: fixed; inset: 0; z-index: 2147483645; background: rgba(20,18,16,.92); display: flex; align-items: center; justify-content: center; padding: 16px; }
+  .dm-lb-scroll { max-width: 100%; max-height: 100%; overflow: auto; border-radius: 10px; background: #fff; -webkit-overflow-scrolling: touch; }
+  .dm-lb-scroll img { display: block; width: min(1350px, 96vw); min-width: 880px; max-width: none; height: auto; }
+  .dm-lb-x { position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; border-radius: 50%; border: none; background: #fff; color: #1F1D1B; font-size: 22px; cursor: pointer; line-height: 1; }
+  .dm-lb-hint { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; color: rgba(255,255,255,.7); font-size: 12.5px; pointer-events: none; }
+  @media (min-width: 900px) { .dm-lb-hint { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="./">Дания <b>/</b> Мамаева</a>
+    <a class="back" href="./">← На главную</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Портфолио</p>
+    <h1>Кейсы и <span class="hw">результаты</span></h1>
+    <p class="lead">Разборы с цифрами в моём TenChat и примеры рекламных кампаний в картинках. Здесь малая часть кейсов, остальные покажу по запросу.</p>
+  </section>
+
+  <h2 class="sec-h">Разборы в TenChat</h2>
+  <p class="sec-p">Подробные истории проектов: что было на входе, что делали и какие получились цифры.</p>
+  <div class="grid">
+    <a class="card" href="https://tenchat.ru/media/528336-keys-po-tovarnomu-biznesu" target="_blank" rel="noopener">
+      <span class="tag">Товарный бизнес</span>
+      <h2>Кейс по товарному бизнесу</h2>
+      <p>Крупный косметический бренд в узком сегменте: свой сайт и маркетплейсы. Проверяли гипотезы привлечения и роста продаж на собственном сайте.</p>
+      <span class="more">Читать в TenChat →</span>
+    </a>
+    <a class="card" href="https://tenchat.ru/media/1983732-keys-avtoservis" target="_blank" rel="noopener">
+      <span class="tag">Автосервис</span>
+      <h2>Кейс: автосервис, Барнаул</h2>
+      <p>Почти три года работы с одним автосервисом: сначала Meta, затем VK и Яндекс. Заявки на услуги от 150 ₽ в Meta и около 400 ₽ из поиска Яндекса.</p>
+      <span class="more">Читать в TenChat →</span>
+    </a>
+    <a class="card" href="https://tenchat.ru/media/1037633-itogi-onlaynkonferentsii" target="_blank" rel="noopener">
+      <span class="tag">Онлайн-образование</span>
+      <h2>Итоги онлайн-конференции</h2>
+      <p>Конференция по психологии у клиента: 517 регистраций, 80% из них новые люди, цена привлечения 36–60 ₽ в VK, доходимость 38%.</p>
+      <span class="more">Читать в TenChat →</span>
+    </a>
+    <a class="card" href="https://tenchat.ru/media/5339049-keys-privlecheniye-uchastnikov-na-konferentsiyu-v-ramkakh-analitiki-ekspo2026" target="_blank" rel="noopener">
+      <span class="tag">B2B-конференция</span>
+      <h2>Привлечение участников на конференцию в рамках аналитики ЭКСПО-2026</h2>
+      <p>Конференция для специалистов по оснащению лабораторий. Разбор того, как поднять конверсию лендинга, которая была около 0,5%.</p>
+      <span class="more">Читать в TenChat →</span>
+    </a>
+    <a class="card" href="https://tenchat.ru/media/5339006-keys-200-tysyach-na-auditorii-babushek" target="_blank" rel="noopener">
+      <span class="tag">Онлайн-курс</span>
+      <h2>«200 тысяч на аудитории бабушек»</h2>
+      <p>Онлайн-курс «Ничего лишнего в огороде» для аудитории 50+: запуск на уже существующих каналах, без вложений в рекламу.</p>
+      <span class="more">Читать в TenChat →</span>
+    </a>
+  </div>
+
+  <h2 class="sec-h">Кейсы в картинках</h2>
+  <p class="sec-p">Листайте стрелками или свайпом, нажмите на слайд, чтобы увеличить.</p>
+  <div class="cs-wrap">
+    <div data-cs style="margin-top:clamp(26px,3.2vw,44px)">
+  <div style="position:relative">
+    <div data-cs-track tabindex="0" role="region" aria-label="Кейсы: слайды" style="display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; -webkit-overflow-scrolling:touch; border-radius:12px; border:1px solid #E7E0D5; background:#FFFFFF">
+      <figure data-cap="Интернет-магазин детских товаров BABY DAY" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-01.png" width="1350" height="646" alt="Кейс: интернет-магазин детских товаров BABY DAY. Концепция, дизайн, продвижение, 8,5 лет работы, более 25 000 заказов" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="Студия флористики и дизайна BARBARIS" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-02.png" width="1350" height="646" alt="Кейс: студия флористики и дизайна BARBARIS. Таргетированная реклама на интенсив перед продажей курса" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="Авторский фототур в Крым" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-03.png" width="1350" height="646" alt="Кейс: авторский фототур в Крым. Таргетированная реклама, цена лида 150–300 рублей" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="Uvarov Education. Курс по колористике" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-04.png" width="1350" height="646" alt="Кейс: Uvarov Education, курс по колористике. Таргетированная реклама на вебинары перед продажей курса" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="ULLA POPKEN SPB, одежда из Германии" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-05.png" width="1350" height="646" alt="Кейс: ULLA POPKEN SPB, одежда из Германии. Таргетированная реклама на Санкт-Петербург, цена лида 150–400 рублей" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="PRO CONTENT, марафон по контенту" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-06.png" width="1350" height="646" alt="Кейс: PRO CONTENT, марафон по контенту. Таргетированная реклама на марафон и чат-бот" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="Анна Акопян, марафон по дизайну интерьера" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-07.png" width="1350" height="646" alt="Кейс: Анна Акопян, марафон по дизайну интерьера. 277 лидов, цена лида 1,72 доллара, 36 заявок на оплату" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="MARKETING ACADEMY 2021, марафон по маркетингу" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-08.png" width="1350" height="646" alt="Кейс: MARKETING ACADEMY 2021, марафон по маркетингу. Таргетированная реклама на марафон и чат-бот" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="SLASTNIK, кондитерские формы" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-09.png" width="1350" height="646" alt="Кейс: SLASTNIK, кондитерские формы. Контекстная реклама на интернет-магазин" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="Акцент-сервис, автосервис, Барнаул" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-10.png" width="1350" height="646" alt="Кейс: Акцент-сервис, автосервис в Барнауле. Таргетированная реклама на профиль и лид-форму" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="Алсу Гафнер, марафон" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-11.png" width="1350" height="646" alt="Кейс: Алсу Гафнер, марафон. 1137 лидов, цена лида 12 рублей, оплата клуба ROMI 1000%" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+      <figure data-cap="Фотошкола: школьная и детская фотография" style="flex:0 0 100%; scroll-snap-align:start; cursor:zoom-in"><img src="assets/cases/case-12.png" width="1350" height="646" alt="Кейс: фотошкола, школьная и детская фотография. Реклама на автовебинар, цена лида 150–300 рублей, ROMI 400%" loading="lazy" style="display:block; width:100%; height:auto"></figure>
+    </div>
+    <button type="button" data-cs-prev aria-label="Предыдущий кейс" class="dm-cs-btn" style="left:10px">&#8592;</button>
+    <button type="button" data-cs-next aria-label="Следующий кейс" class="dm-cs-btn" style="right:10px">&#8594;</button>
+  </div>
+  <div style="margin-top:14px; display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; justify-content:space-between">
+    <p data-cs-cap aria-live="polite" style="font-size:15px; font-weight:600; color:#1F1D1B; line-height:1.4">Интернет-магазин детских товаров BABY DAY</p>
+    <p style="font-family:Unbounded,sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; color:#C8235A"><span data-cs-num>1</span> / 12</p>
+  </div>
+</div>
+  </div>
+  <p class="cs-note">Работы разных лет: от интернет-магазина до онлайн-марафонов и B2B.</p>
+
+  <div class="subscribe">
+    <h2>Нужен такой же результат?</h2>
+    <p>Расскажу, что можно сделать в вашем проекте, и посчитаю в деньгах. Диагностика бесплатная, 20–30 минут.</p>
+    <div class="btns">
+      <a class="btn" href="https://t.me/daniyamamaeva">Получить диагностику</a>
+      <a class="btn dark" href="brief.html">Отправить бриф на работу</a>
+      <a class="btn dark" href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU">Написать в MAX</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Дания Мамаева · самозанятая · ИНН 540403873078 · <a href="privacy.html">Политика обработки персональных данных</a>
+</footer>
+<script id="dm-cs-js">
+(function () {
+  function root(el) { return el.closest ? el.closest('[data-cs]') : null; }
+  function idx(track) { return Math.max(0, Math.min(track.children.length - 1, Math.round(track.scrollLeft / Math.max(1, track.clientWidth)))); }
+  function go(track, i) {
+    var n = track.children.length;
+    i = (i + n) % n;
+    track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+  }
+  function closeLb() {
+    var lb = document.getElementById('dm-lb');
+    if (lb) { lb.remove(); document.documentElement.style.overflow = ''; }
+  }
+  function openLb(src, alt) {
+    closeLb();
+    var lb = document.createElement('div');
+    lb.id = 'dm-lb'; lb.className = 'dm-lb'; lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-label', alt || 'Кейс');
+    lb.innerHTML = '<div class="dm-lb-scroll"><img alt=""></div><button type="button" class="dm-lb-x" aria-label="Закрыть">&#10005;</button><div class="dm-lb-hint">Проведите пальцем, чтобы посмотреть слайд целиком</div>';
+    lb.querySelector('img').src = src;
+    lb.querySelector('img').alt = alt || '';
+    document.body.appendChild(lb);
+    document.documentElement.style.overflow = 'hidden';
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (t.closest('.dm-lb-x') || t.id === 'dm-lb') { closeLb(); return; }
+    var prev = t.closest('[data-cs-prev]'), next = t.closest('[data-cs-next]');
+    if (prev || next) {
+      var r = root(t), tr = r && r.querySelector('[data-cs-track]');
+      if (tr) go(tr, idx(tr) + (next ? 1 : -1));
+      return;
+    }
+    var fig = t.closest('[data-cs-track] figure');
+    if (fig) { var im = fig.querySelector('img'); if (im) openLb(im.getAttribute('src'), im.getAttribute('alt')); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { closeLb(); return; }
+    var a = document.activeElement;
+    var tr = a && a.matches && a.matches('[data-cs-track]') ? a : null;
+    if (tr && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) { e.preventDefault(); go(tr, idx(tr) + (e.key === 'ArrowRight' ? 1 : -1)); }
+  });
+  document.addEventListener('scroll', function (e) {
+    var tr = e.target;
+    if (!tr || !tr.matches || !tr.matches('[data-cs-track]')) return;
+    var r = root(tr), i = idx(tr);
+    var cap = r.querySelector('[data-cs-cap]'), num = r.querySelector('[data-cs-num]');
+    if (cap && tr.children[i]) cap.textContent = tr.children[i].getAttribute('data-cap') || '';
+    if (num) num.textContent = String(i + 1);
+  }, true);
+})();
+</script>
+</body>
+</html>
