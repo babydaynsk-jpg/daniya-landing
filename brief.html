@@ -2,17 +2,14 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://mc.yandex.ru https://yastatic.net; frame-src blob: https://forms.yandex.ru https://mc.yandex.ru https://mc.yandex.com; child-src blob: https://mc.yandex.ru; worker-src blob:; form-action 'self' https://forms.yandex.ru; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://mc.yandex.ru https://yastatic.net; frame-src blob: https://forms.yandex.ru https://mc.yandex.ru https://mc.yandex.com; child-src blob: https://mc.yandex.ru; worker-src blob:; form-action 'self' https://forms.yandex.ru; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Бриф на работу — Дания Мамаева</title>
 <meta name="description" content="Бриф для старта работы с маркетологом Данией Мамаевой. Заполните на сайте и сохраните в PDF.">
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=20261006">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://daniya-mamaeva.ru/brief.html">
@@ -56,9 +53,9 @@
 
   <div class="toolbar">
     <button class="btn" type="button" data-print>Сохранить в PDF / печать</button>
-    <a class="btn dark" href="https://t.me/daniya_mamaeva">Отправить в Telegram</a>
-    <a class="btn dark" href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU">Отправить в MAX</a>
-    <a class="btn ghost" href="mailto:daniya.mamaeva@yandex.ru?subject=Бриф%20на%20работу">Отправить на почту</a>
+    <a class="btn dark" data-needs-consent href="https://t.me/daniya_mamaeva">Отправить в Telegram</a>
+    <a class="btn dark" data-needs-consent href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU">Отправить в MAX</a>
+    <a class="btn ghost" data-needs-consent href="mailto:daniya.mamaeva@yandex.ru?subject=Бриф%20на%20работу">Отправить на почту</a>
   </div>
 
   <form id="brief">
@@ -111,16 +108,24 @@
     </fieldset>
   </form>
 
+  <div class="consent" style="margin:28px 0 8px;padding:18px 20px;border:1px solid var(--line);border-radius:18px;background:var(--gray)">
+    <label style="display:flex;gap:12px;align-items:flex-start;cursor:pointer;font-size:15px;line-height:1.5">
+      <input type="checkbox" data-consent-box style="width:20px;height:20px;margin-top:2px;flex:none;accent-color:var(--accent)">
+      <span>Я даю <a href="soglasie.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a></span>
+    </label>
+    <p data-consent-hint hidden style="margin-top:10px;font-size:14px;color:var(--accent)">Поставьте отметку согласия, чтобы отправить бриф.</p>
+    <p style="margin-top:10px;font-size:13px;color:var(--muted)">Как обрабатываются данные — в <a href="privacy.html">политике обработки персональных данных</a>.</p>
+  </div>
+
   <div class="send">
     <h2>Как отправить бриф</h2>
-    <p>Нажмите «Сохранить в PDF / печать», выберите «Сохранить как PDF» — и пришлите файл мне в Telegram <a href="https://t.me/daniya_mamaeva">@daniya_mamaeva</a>, в <a href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU">MAX</a> или на почту <a href="mailto:daniya.mamaeva@yandex.ru">daniya.mamaeva@yandex.ru</a>. Отвечаю в течение часа (09:00–21:00).</p>
+    <p>Нажмите «Сохранить в PDF / печать», выберите «Сохранить как PDF» — и пришлите файл мне в Telegram <a data-needs-consent href="https://t.me/daniya_mamaeva">@daniya_mamaeva</a>, в <a href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU">MAX</a> или на почту <a href="mailto:daniya.mamaeva@yandex.ru">daniya.mamaeva@yandex.ru</a>. Отвечаю в течение часа (09:00–21:00).</p>
     <div class="btns">
       <button class="btn" type="button" data-print>Сохранить в PDF</button>
-      <a class="btn dark" href="https://t.me/daniya_mamaeva">Написать в Telegram</a>
-      <a class="btn dark" href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU">Написать в MAX</a>
+      <a class="btn dark" data-needs-consent href="https://t.me/daniya_mamaeva">Написать в Telegram</a>
+      <a class="btn dark" data-needs-consent href="https://max.ru/u/f9LHodD0cOJQsD0c08pBRROf1Z-zTjym3hQkJAcu83FGh6DxJeC-L1r2pfU">Написать в MAX</a>
     </div>
   </div>
-  <p class="note">Отправляя бриф, вы соглашаетесь с обработкой персональных данных согласно <a href="privacy.html">политике</a>.</p>
 </main>
 
 <footer class="footer">
@@ -128,11 +133,11 @@
     <div><p class="logo">Дания Мамаева</p><p>Новосибирск, Россия</p></div>
     <div><a href="tel:+79139872588">+7 913 987 2588</a><a href="mailto:daniya.mamaeva@yandex.ru">daniya.mamaeva@yandex.ru</a></div>
     <div><a href="https://t.me/daniya_mamaeva" target="_blank" rel="noopener">Канал в Telegram</a><a href="https://max.ru/channel_daniya_mamaeva" target="_blank" rel="noopener">Канал в MAX</a><a href="https://tenchat.ru/daniya_mamaeva" target="_blank" rel="noopener">TenChat</a><a href="https://dzen.ru/daniya_mamaeva" target="_blank" rel="noopener">Канал в Дзене</a></div>
-    <div><a href="articles.html">Статьи</a><a href="brief.html">Бриф на работу</a><a href="privacy.html">Политика конфиденциальности</a></div>
+    <div><a href="articles.html">Статьи</a><a href="brief.html">Бриф на работу</a><a href="privacy.html">Политика конфиденциальности</a><a href="soglasie.html">Согласие на обработку ПД</a></div>
   </div>
-  <p class="foot-in legal">© 2026 Дания Мамаева · Мамаева Дания Дамировна · самозанятая · ИНН 540403873078</p>
+  <p class="foot-in legal">© 2026 Дания Мамаева · Мамаева Дания Дамировна · самозанятая · ИНН 540403873078 · <a href="#" data-cookie-settings>Настройки cookie</a></p>
 </footer>
-<script src="assets/site.js" defer></script>
+<script src="assets/site.js?v=20261006" defer></script>
 <script src="assets/goals.js" defer></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://mc.yandex.ru https://yastatic.net; frame-src blob: https://forms.yandex.ru https://mc.yandex.ru https://mc.yandex.com; child-src blob: https://mc.yandex.ru; worker-src blob:; form-action 'self' https://forms.yandex.ru; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://mc.yandex.ru https://yastatic.net; frame-src blob: https://forms.yandex.ru https://mc.yandex.ru https://mc.yandex.com; child-src blob: https://mc.yandex.ru; worker-src blob:; form-action 'self' https://forms.yandex.ru; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Интернет-маркетолог: Новосибирск и весь мир — Дания Мамаева</title>
@@ -33,10 +33,15 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://daniya-mamaeva.ru/#website", "url": "https://daniya-mamaeva.ru/", "name": "Дания Мамаева — интернет-маркетолог", "inLanguage": "ru-RU", "publisher": {"@id": "https://daniya-mamaeva.ru/#person"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://daniya-mamaeva.ru/#webpage", "url": "https://daniya-mamaeva.ru/", "name": "Интернет-маркетолог: Новосибирск и весь мир — Дания Мамаева", "description": "Интернет-маркетолог из Новосибирска, работаю с клиентами по всему миру: реклама, сайт, email и отчёт в деньгах. 8,5 лет своего бизнеса. Бесплатная диагностика.", "isPartOf": {"@id": "https://daniya-mamaeva.ru/#website"}, "about": {"@id": "https://daniya-mamaeva.ru/#person"}, "inLanguage": "ru-RU", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://daniya-mamaeva.ru/assets/daniya-hero.webp"}}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style>/* cyrillic-ext */
+@font-face{font-family:'Great Vibes';font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/gv-cyrext.woff2") format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:'Great Vibes';font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/gv-cyr.woff2") format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* latin-ext */
+@font-face{font-family:'Great Vibes';font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/gv-latext.woff2") format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:'Great Vibes';font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/gv-lat.woff2") format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
 @font-face {
   font-family: 'Golos Text';
   font-style: normal;
@@ -411,7 +416,7 @@ h3{font-size:clamp(20px,2vw,24px);line-height:1.2;font-weight:600;letter-spacing
 .hero-photo img{width:100%;max-width:460px;margin:0 auto;height:auto;mask-image:linear-gradient(#000 88%,transparent);-webkit-mask-image:linear-gradient(#000 88%,transparent)}
 @media(max-width:820px){.hero{grid-template-columns:1fr;text-align:left}.hero-photo{order:-1}.hero-photo img{max-width:300px;margin:0 auto 0 auto}}
 
-.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:clamp(40px,5vw,72px)}
+.seg{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;padding-top:clamp(40px,5vw,72px)}
 @media(max-width:900px){.seg{grid-template-columns:1fr}}
 .card{display:flex;flex-direction:column;background:var(--gray);border-radius:var(--r);padding:clamp(24px,3vw,36px);color:var(--ink);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
 .card p{margin-top:12px;color:var(--ink2);font-size:16px}
@@ -581,6 +586,8 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
 /* cookie */
 .cookie{position:fixed;z-index:2147483640;right:16px;bottom:16px;max-width:420px;display:flex;gap:16px;align-items:center;background:rgba(29,29,31,.92);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);color:#f5f5f7;border-radius:20px;padding:14px 14px 14px 20px;font-size:13px;line-height:1.4;box-shadow:0 12px 40px rgba(0,0,0,.25)}
 .cookie p{flex:1}
+.cookie .cbtn{display:grid;gap:8px;flex:none}
+.cookie button.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45)}
 .cookie a{color:#fff;text-decoration:underline;text-underline-offset:2px}
 .cookie button{flex:none;border:0;background:#fff;color:var(--ink);font-weight:600;font-size:14px;border-radius:980px;padding:10px 20px;cursor:pointer}
 @media(max-width:520px){.cookie{left:10px;right:10px;bottom:10px}}
@@ -645,12 +652,6 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
     <p>Отчёт каждую неделю в деньгах, все кабинеты на вас. Конференция: 44 заявки за 3,5 недели по 1 500 ₽.</p>
     <span class="more">Смотреть кейсы ›</span>
   </a>
-  <a class="card seg-card" href="#marketplace">
-    <span class="tag">Wildberries и Ozon</span>
-    <h3>Реклама съедает маржу?</h3>
-    <p>Сначала считаю ДРР против вашей маржи, и только потом запускаю. Без самовыкупов и накрутки отзывов.</p>
-    <span class="more">Как я считаю ›</span>
-  </a>
 </section>
 
 <!-- ABOUT -->
@@ -668,7 +669,7 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
       <img class="about-img" src="assets/daniya-1.jpg" width="853" height="1280" loading="lazy" decoding="async" alt="Дания Мамаева, интернет-маркетолог">
       <div class="about-text">
         <p class="big">Магазин детских товаров Baby Day: с 0 ₽ до 1,3 млн ₽ оборота в месяц. Не консультация со стороны, а компания, которую я вела сама, своими деньгами.</p>
-        <p>С клиентами получаю лиды от 450 ₽ за счёт правок посадочной страницы, смены стратегии, доработки рекламной кампании и новых точек захвата лидов.</p>
+        <p>В проекте АКАРТ получаю лиды по 450 ₽ за счёт правок посадочной страницы, смены стратегии, доработки рекламной кампании и новых точек захвата лидов.</p>
         <details class="acc">
           <summary>Полная история</summary>
           <div class="acc-body">
@@ -826,22 +827,6 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
   </div>
 </section>
 
-<!-- MARKETPLACE -->
-<section id="marketplace" class="sec sec-gray">
-  <div class="wrap">
-    <p class="eyebrow center">Для селлеров Wildberries и Ozon</p>
-    <h2 class="center">Как считаю <span class="script">для маркетплейса</span></h2>
-    <div class="trio" data-r>
-      <div class="card"><h3>ДРР против маржи</h3><p>Сначала юнит-экономика: маржа товара минус ДРР.</p>
-        <details class="acc"><summary>Пример</summary><div class="acc-body"><p>Маржа 20%, а реклама забирает 25% выручки — это работа в минус. Скажу об этом до запуска, а не после слива бюджета.</p></div></details></div>
-      <div class="card"><h3>Без серых схем</h3><p>Никаких самовыкупов и накрутки отзывов.</p>
-        <details class="acc"><summary>Почему</summary><div class="acc-body"><p>За них можно получить блокировку аккаунта и заморозку денег на складе. Рост — за счёт карточки, ставок и органики.</p></div></details></div>
-      <div class="card"><h3>Если не окупится — скажу</h3><p>Не продам пакет, который не сработает.</p>
-        <details class="acc"><summary>Что тогда</summary><div class="acc-body"><p>Если по расчёту услуга не окупится при вашем обороте, так и скажу. Для старта можно взять консультацию за 15 000 ₽ или тариф «Один канал» за 40 000 ₽.</p></div></details></div>
-    </div>
-  </div>
-</section>
-
 <!-- RESULTS -->
 <section id="results" class="sec">
   <div class="wrap">
@@ -857,7 +842,8 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
     <div class="panel" id="res-b2b" data-panel="b2b">
       <article class="kpi kpi-wide"><p class="kpi-n">1 500 ₽</p><h3>44 заявки за 3,5 недели</h3><p>Конференция для компании по оснащению лабораторий, Москва, 2026. Цена билета 8 000 ₽.</p>
         <details class="acc"><summary>Подробнее</summary><div class="acc-body"><p>Конверсия лендинга выросла с 0,5% до 1% после доработки страницы. Три инструмента: реклама на поиске, похожие аудитории и ретаргетинг.</p></div></details></article>
-      <article class="kpi"><p class="kpi-n">от 450 ₽</p><h3>за лид</h3><p>ООО «АКАРТ», пластиковые карты, с 2019 года. Правки посадочной, смена стратегии, новые точки захвата лидов.</p></article>
+      <article class="kpi"><p class="kpi-n">450 ₽</p><h3>за лид</h3><p>ООО «АКАРТ», пластиковые карты, с 2019 года. Правки посадочной, смена стратегии, новые точки захвата лидов.</p>
+        <details class="acc"><summary>Подробнее</summary><div class="acc-body"><p>Вместе с 2019 года.</p></div></details></article>
       <article class="kpi"><p class="kpi-n">2 дня</p><h3>обошли конкурента</h3><p>Производственная компания, комплектующие для конвейеров, с 2020 года. Товарная галерея Яндекса за счёт доработки фида.</p>
         <details class="acc"><summary>Подробнее</summary><div class="acc-body"><p>Вместе 6 лет: Директ, фиды, email-рассылки, баннеры.</p></div></details></article>
     </div>
@@ -880,7 +866,7 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
       <ul>
         <li><b>АКАРТ</b><span>с 2019</span></li>
         <li><b>Производственная компания</b><span>с 2020</span></li>
-        <li><b>Алсу Гафнер</b><span>блогер, 380 тыс. · 2021–2025</span></li>
+        <li><b>Блогер</b><span>367+ тыс. подписчиков · 2021–2025</span></li>
         <li><b>Татьяна Совина</b><span>эксперт · с 2022</span></li>
         <li><b>Форсайт</b><span>психология · 2022–2023</span></li>
         <li><b>Hygge Decor</b><span>маркетплейсы · с 2023</span></li>
@@ -895,11 +881,12 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
     <p class="eyebrow center">Отзывы</p>
     <h2 class="center">Что говорят <span class="script">клиенты</span></h2>
     <div class="slider" data-r>
-      <figure class="quote"><blockquote>«Первый кейс, но не первый успех. [...] После качественного перебора и перенастройки рекламной кампании нашим щепетильным smm-маркетологом мы ощутили, что рекламный бюджет стал расходоваться дольше и эффективнее.»</blockquote><figcaption><b>А-Карт</b>ООО «АКАРТ» · Instagram, июль 2019</figcaption></figure>
-      <figure class="quote"><blockquote>«Почти 2000 участников в потоке. [...] Вовлеченность почти 50%, и это очень круто: в среднем в марафонах ходят в эфиры около 30%.»</blockquote><figcaption><b>Любовь Чернышова</b>организатор марафона · пост в Instagram</figcaption></figure>
+      <figure class="quote"><blockquote>«Первый кейс, но не первый успех. [...] После качественного перебора и перенастройки рекламной кампании нашим щепетильным smm-маркетологом мы ощутили, что рекламный бюджет стал расходоваться дольше и эффективнее.»</blockquote><figcaption><b>А-Карт</b>ООО «АКАРТ» · Instagram*, июль 2019</figcaption></figure>
+      <figure class="quote"><blockquote>«Почти 2000 участников в потоке. [...] Вовлеченность почти 50%, и это очень круто: в среднем в марафонах ходят в эфиры около 30%.»</blockquote><figcaption><b>Любовь Чернышова</b>организатор марафона · пост в Instagram*</figcaption></figure>
       <figure class="quote"><blockquote>«Тебе огромное спасибо за твою помощь, участие, за твой профессионализм и подход к работе. Пусть у тебя всё только развивается и растёт.»</blockquote><figcaption><b>Клиент, онлайн-проект</b>сообщение после года работы, 2022</figcaption></figure>
     </div>
-    <p class="foot center">Цитаты взяты из переписок и публикаций клиентов. Оригиналы покажу по запросу, больше отзывов — <a href="https://www.instagram.com/daniya_mamaeva/" target="_blank" rel="noopener">в Instagram</a>, в актуальном «Отзывы».</p>
+    <p class="foot center">Цитаты взяты из переписок и публикаций клиентов. Оригиналы покажу по запросу, больше отзывов — <a href="https://www.instagram.com/daniya_mamaeva/" target="_blank" rel="noopener">в Instagram*</a>, в актуальном «Отзывы».</p>
+    <p class="foot center">* Instagram принадлежит компании Meta, которая признана экстремистской организацией и запрещена в Российской Федерации.</p>
   </div>
 </section>
 
@@ -997,17 +984,17 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
     <div><p class="logo">Дания Мамаева</p><p>Новосибирск, Россия</p></div>
     <div><a href="tel:+79139872588">+7 913 987 2588</a><a href="mailto:daniya.mamaeva@yandex.ru">daniya.mamaeva@yandex.ru</a></div>
     <div><a href="https://t.me/daniya_mamaeva" target="_blank" rel="noopener">Канал в Telegram</a><a href="https://max.ru/channel_daniya_mamaeva" target="_blank" rel="noopener">Канал в MAX</a><a href="https://tenchat.ru/daniya_mamaeva" target="_blank" rel="noopener">TenChat</a><a href="https://dzen.ru/daniya_mamaeva" target="_blank" rel="noopener">Канал в Дзене</a></div>
-    <div><a href="articles.html">Статьи</a><a href="brief.html">Бриф на работу</a><a href="privacy.html">Политика конфиденциальности</a></div>
+    <div><a href="articles.html">Статьи</a><a href="brief.html">Бриф на работу</a><a href="privacy.html">Политика конфиденциальности</a><a href="soglasie.html">Согласие на обработку ПД</a></div>
   </div>
-  <p class="wrap legal">© 2026 Дания Мамаева · Мамаева Дания Дамировна · самозанятая · ИНН 540403873078</p>
+  <p class="wrap legal">© 2026 Дания Мамаева · Мамаева Дания Дамировна · самозанятая · ИНН 540403873078 · <a href="#" data-cookie-settings>Настройки cookie</a></p>
 </footer>
 
 <div id="dm-cookie" class="cookie" hidden>
-  <p>Сайт использует cookie, чтобы корректно работать и анализировать посещаемость. Нажимая «Принять», вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
-  <button type="button" data-accept-cookies>Принять</button>
+  <p>Сайт использует cookie и сервис Яндекс Метрика (в том числе запись действий на странице — Вебвизор), чтобы анализировать посещаемость. Аналитика включается только после вашего согласия. Подробнее — в <a href="privacy.html">политике конфиденциальности</a>.</p>
+  <div class="cbtn"><button type="button" data-accept-cookies>Принять</button><button type="button" class="ghost" data-decline-cookies>Отклонить</button></div>
 </div>
 
-<script src="assets/home.js" defer></script>
+<script src="assets/home.js?v=20261006" defer></script>
 <script src="assets/goals.js" defer></script>
 </body>
 </html>

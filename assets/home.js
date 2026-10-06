@@ -11,16 +11,31 @@
     })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     window.ym(YM_ID, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
   }
-  var ok = false;
-  try { ok = localStorage.getItem("dm_cookie_ok") === "1"; } catch (e) {}
+  var state = null;
+  try { state = localStorage.getItem("dm_cookie_ok"); } catch (e) {}
   var ck = document.getElementById("dm-cookie");
-  if (ok) loadMetrika(); else if (ck) ck.hidden = false;
+  if (state === "1") loadMetrika(); else if (state !== "0" && ck) ck.hidden = false;
 
   function showTab(id) {
     document.querySelectorAll("[data-tab]").forEach(function (b) { b.setAttribute("aria-selected", b.getAttribute("data-tab") === id ? "true" : "false"); });
     document.querySelectorAll("[data-panel]").forEach(function (p) { p.hidden = p.getAttribute("data-panel") !== id; });
   }
   document.addEventListener("click", function (e) {
+    var dc = e.target.closest("[data-decline-cookies]");
+    if (dc) {
+      var wasOn = window.__dmYmLoaded;
+      try { localStorage.setItem("dm_cookie_ok", "0"); } catch (_) {}
+      if (ck) ck.hidden = true;
+      if (wasOn) location.reload();
+      return;
+    }
+    var cs = e.target.closest("[data-cookie-settings]");
+    if (cs) {
+      e.preventDefault();
+      try { localStorage.removeItem("dm_cookie_ok"); } catch (_) {}
+      if (ck) ck.hidden = false;
+      return;
+    }
     var a = e.target.closest("[data-accept-cookies]");
     if (a) {
       try { localStorage.setItem("dm_cookie_ok", "1"); } catch (_) {}
