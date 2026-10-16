@@ -469,7 +469,7 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
 .vs-head{font-size:13px;font-weight:600;color:var(--ink2);padding-bottom:12px}
 .vs-head .me{color:var(--accent)}
 .vs-row,.vs-more summary{border-top:1px solid var(--line)}
-.vs-row h4{font-size:16px;font-weight:600}
+.seg .seg-card h2{font-size:clamp(20px,2vw,24px);line-height:1.2;font-weight:600;letter-spacing:-.015em;margin-top:0;text-wrap:wrap}.vs-row h3,.fit h3{line-height:inherit;letter-spacing:normal}.vs-row h3,.vs-row h4{font-size:16px;font-weight:600}
 .vs-row .them{color:var(--ink2);font-size:15px}
 .vs-row .me{font-weight:500;font-size:15px}
 .vs-more summary{list-style:none;cursor:pointer;padding:18px 0;color:var(--accent);font-weight:500;text-align:center}
@@ -520,7 +520,7 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
 .cmp-p{margin-top:6px;font-size:28px;font-weight:700;letter-spacing:-.02em;color:#f5f5f7}
 .cmp-d{margin-top:10px;font-size:14.5px;color:#a1a1a6}
 .fit{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.fit h4{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.fit h3,.fit h4{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:6px}
 .fit .foot{grid-column:1/-1;margin:0}
 @media(max-width:640px){.fit{grid-template-columns:1fr}}
 
@@ -642,13 +642,13 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
 <section class="wrap seg" aria-label="Выберите, что про вас">
   <a class="card seg-card" href="#res-edu">
     <span class="tag">Онлайн-школа, эксперт</span>
-    <h3>Запуск скоро, а трафик не окупается?</h3>
+    <h2>Запуск скоро, а трафик не окупается?</h2>
     <p>Считаю окупаемость до запуска. Вебинары — ROMI 2000%, конференция — 517 регистраций по 36–60 ₽.</p>
     <span class="more">Смотреть кейсы ›</span>
   </a>
   <a class="card seg-card" href="#res-b2b">
     <span class="tag">B2B и производство</span>
-    <h3>Подрядчики показывали охваты, а не заявки?</h3>
+    <h2>Подрядчики показывали охваты, а не заявки?</h2>
     <p>Отчёт каждую неделю в деньгах, все кабинеты на вас. Конференция: 44 заявки за 3,5 недели по 1 500 ₽.</p>
     <span class="more">Смотреть кейсы ›</span>
   </a>
@@ -700,13 +700,13 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
     <h2 class="center">Если закрыть <span class="script">логотипы</span></h2>
     <div class="vs" data-r>
       <div class="vs-head"><span></span><span>Типичный подрядчик</span><span class="me">Я</span></div>
-      <div class="vs-row"><h4>Отчёт</h4><p class="them">Клики, охваты и CTR — «по запросу»</p><p class="me">Каждую неделю, в деньгах: вложено → получено → что меняем</p></div>
-      <div class="vs-row"><h4>Контакт</h4><p class="them">Эпизодический, часто «в тишине»</p><p class="me">Ответ в течение часа, с 9:00 до 21:00</p></div>
-      <div class="vs-row"><h4>Правки сайта</h4><p class="them">«Это к программисту» — и неделя в очереди</p><p class="me">Правлю сама с помощью AI-инструментов — в течение 24 часов</p></div>
+      <div class="vs-row"><h3>Отчёт</h3><p class="them">Клики, охваты и CTR — «по запросу»</p><p class="me">Каждую неделю, в деньгах: вложено → получено → что меняем</p></div>
+      <div class="vs-row"><h3>Контакт</h3><p class="them">Эпизодический, часто «в тишине»</p><p class="me">Ответ в течение часа, с 9:00 до 21:00</p></div>
+      <div class="vs-row"><h3>Правки сайта</h3><p class="them">«Это к программисту» — и неделя в очереди</p><p class="me">Правлю сама с помощью AI-инструментов — в течение 24 часов</p></div>
       <details class="vs-more">
         <summary>Показать ещё два пункта</summary>
-        <div class="vs-row"><h4>Когда что-то идёт не так</h4><p class="them">Молчание или исчезновение</p><p class="me">Говорю первой и предлагаю другой путь</p></div>
-        <div class="vs-row"><h4>Сколько длится работа</h4><p class="them">Пара месяцев — и новый поиск</p><p class="me">Годами: АКАРТ — с 2019, производственная компания — с 2020, ещё три проекта — по 3–4 года</p></div>
+        <div class="vs-row"><h3>Когда что-то идёт не так</h3><p class="them">Молчание или исчезновение</p><p class="me">Говорю первой и предлагаю другой путь</p></div>
+        <div class="vs-row"><h3>Сколько длится работа</h3><p class="them">Пара месяцев — и новый поиск</p><p class="me">Годами: АКАРТ — с 2019, производственная компания — с 2020, ещё три проекта — по 3–4 года</p></div>
       </details>
     </div>
   </div>
@@ -818,8 +818,8 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
       <details class="acc"><summary>Чьи доступы и кабинеты</summary><div class="acc-body"><p><b>Ваши.</b> Рекламные кабинеты и счётчики регистрирую на вас — доступ остаётся у вас и после окончания работы.</p></div></details>
       <details class="acc"><summary>Кому сюда не стоит</summary>
         <div class="acc-body fit">
-          <div><h4>Подходит, если</h4><ul class="ticks"><li>вы закладываете горизонт 6–8 недель на стабильный результат</li><li>вы готовы к предоплате как к серьёзным партнёрским отношениям</li><li>вам важно понимать, что происходит с бюджетом</li></ul></div>
-          <div><h4>Не подходит, если</h4><ul class="ticks cross"><li>вы ищете волшебную кнопку и мгновенный результат без системной работы</li><li>вы не готовы фиксировать условия: KPI, бюджет, обработку заявок</li></ul></div>
+          <div><h3>Подходит, если</h3><ul class="ticks"><li>вы закладываете горизонт 6–8 недель на стабильный результат</li><li>вы готовы к предоплате как к серьёзным партнёрским отношениям</li><li>вам важно понимать, что происходит с бюджетом</li></ul></div>
+          <div><h3>Не подходит, если</h3><ul class="ticks cross"><li>вы ищете волшебную кнопку и мгновенный результат без системной работы</li><li>вы не готовы фиксировать условия: KPI, бюджет, обработку заявок</li></ul></div>
           <p class="foot">Я говорю это до того, как вы заплатите — не после. Так честнее для нас обоих.</p>
         </div>
       </details>
