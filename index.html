@@ -542,10 +542,10 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
 .kpi h3{margin-top:12px}
 .kpi p:not(.kpi-n){margin-top:10px;color:var(--ink2);font-size:15.5px}
 .clients{margin-top:88px}
-.clients ul{margin-top:24px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
-@media(max-width:960px){.clients ul{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.clients ul{grid-template-columns:1fr 1fr}}
-.clients li{border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center}
+.clients ul{margin-top:24px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.clients li{flex:0 1 calc((100% - 60px)/6);display:flex;flex-direction:column;justify-content:center;border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center}
+@media(max-width:960px){.clients li{flex-basis:calc((100% - 24px)/3)}}
+@media(max-width:560px){.clients li{flex-basis:calc((100% - 12px)/2)}}
 .clients b{display:block;font-weight:600;font-size:16px}
 .clients span{display:block;margin-top:4px;color:var(--ink2);font-size:13px}
 .clients .eyebrow{color:var(--ink2)}
@@ -674,7 +674,15 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
           <summary>Полная история</summary>
           <div class="acc-body">
             <p>Начинала в 2002 году с полевых исследований для МТС — была лучшим интервьюером проекта, и с тех пор знаю: ответы, которые меняют маркетинг, дают клиенты, а не рекламный кабинет. Дальше — руководитель отдела маркетинга → собственный бизнес → маркетплейсы в найме → с 2019 года своя практика.</p>
-            <p>Ключевое — собственный бизнес: 8,5 лет Baby Day (2009–2017) и <a href="keys-hygge-decor-wb.html">свои магазины на Wildberries</a> с 2023 года. Я не мыслю отдельным креативом или кампанией. Я вижу всю цепочку: от человека, который впервые увидел рекламу, до клиента, который возвращается снова. Поэтому со мной остаются надолго: АКАРТ — с 2019 года, производственная компания — с 2020-го, ещё два проекта — по 4 года.</p>
+            <p>Ключевое — собственный бизнес: 8,5 лет Baby Day (2009–2017) и <a href="keys-hygge-decor-wb.html">свои магазины на Wildberries</a> с 2023 года. Я не мыслю отдельным креативом или кампанией. Я вижу всю цепочку: от человека, который впервые увидел рекламу, до клиента, который возвращается снова. Поэтому со мной остаются надолго: АКАРТ — с 2019 года, производственная компания — с 2020-го, ещё три проекта — по 4 года.</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary>А как же маркетинг для клиентов, пока вела свои бизнесы?</summary>
+          <div class="acc-body">
+            <p>Клиентская практика не останавливалась. Параллельно со своими проектами я вела маркетинг для клиентов, и это работало в обе стороны.</p>
+            <p>На свой бизнес я смотрела глазами маркетолога со стороны: без «мне и так всё понятно», с цифрами и гипотезами, как на проект клиента. А то, что дало результат у клиентов, внедряла у себя и не тратила свои деньги на проверку с нуля.</p>
+            <p>И наоборот: клиентам приношу то, что проверила на своих деньгах. Поэтому знаю цену рекламного рубля с обеих сторон — и как подрядчик, и как собственник, который этот рубль платит.</p>
           </div>
         </details>
         <details class="acc">
@@ -706,7 +714,7 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
       <details class="vs-more">
         <summary>Показать ещё два пункта</summary>
         <div class="vs-row"><h3>Когда что-то идёт не так</h3><p class="them">Молчание или исчезновение</p><p class="me">Говорю первой и предлагаю другой путь</p></div>
-        <div class="vs-row"><h3>Сколько длится работа</h3><p class="them">Пара месяцев — и новый поиск</p><p class="me">Годами: АКАРТ — с 2019, производственная компания — с 2020, ещё два проекта — по 4 года</p></div>
+        <div class="vs-row"><h3>Сколько длится работа</h3><p class="them">Пара месяцев — и новый поиск</p><p class="me">Годами: АКАРТ — с 2019, производственная компания — с 2020, ещё три проекта — по 4 года</p></div>
       </details>
     </div>
   </div>
@@ -866,6 +874,7 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
       <ul>
         <li><b>АКАРТ</b><span>с 2019</span></li>
         <li><b>Производственная компания</b><span>с 2020</span></li>
+        <li><b>Автосервис «Акцент»</b><span>Барнаул · 2019–2023</span></li>
         <li><b>Блогер</b><span>367+ тыс. подписчиков · 2021–2025</span></li>
         <li><b>Татьяна Совина</b><span>эксперт · с 2022</span></li>
         <li><b>Форсайт</b><span>психология · 2022–2023</span></li>
@@ -894,16 +903,16 @@ a.card:hover{color:var(--ink);transform:translateY(-4px);box-shadow:0 18px 40px 
   <div class="wrap narrow">
     <p class="eyebrow center">Портфолио</p>
     <h2 class="center">Опыт работы <span class="script">с компаниями</span></h2>
-    <p class="sub center">Подробные разборы с цифрами — в TenChat и в мессенджере MAX. 12 кейсов в картинках, остальные покажу по запросу.</p>
+    <p class="sub center">Подробные разборы с цифрами — на отдельных страницах. 12 кейсов в картинках, остальные покажу по запросу.</p>
     <div class="faq" data-r>
-      <details class="acc"><summary>Разборы в TenChat</summary>
+      <details class="acc"><summary>Разборы кейсов</summary>
         <div class="acc-body"><ul class="links">
           <li><a href="keys-hygge-decor-wb.html">Кейс: два моих магазина на Wildberries ›</a></li>
-          <li><a href="https://tenchat.ru/media/528336-keys-po-tovarnomu-biznesu" target="_blank" rel="noopener">Кейс: товарный бизнес ›</a></li>
-          <li><a href="https://tenchat.ru/media/1983732-keys-avtoservis" target="_blank" rel="noopener">Кейс: автосервис ›</a></li>
-          <li><a href="https://tenchat.ru/media/1037633-itogi-onlaynkonferentsii" target="_blank" rel="noopener">Кейс: онлайн-образование по психологии ›</a></li>
-          <li><a href="https://tenchat.ru/media/5339049-keys-privlecheniye-uchastnikov-na-konferentsiyu-v-ramkakh-analitiki-ekspo2026" target="_blank" rel="noopener">Кейс: B2B-конференция ›</a></li>
-          <li><a href="https://tenchat.ru/media/5339006-keys-200-tysyach-na-auditorii-babushek" target="_blank" rel="noopener">Кейс: онлайн-образование, садоводство ›</a></li>
+          <li><a href="keys-kosmetika-sajt-i-marketplejsy.html">Кейс: товарный бизнес ›</a></li>
+          <li><a href="keys-avtoservis-barnaul.html">Кейс: автосервис ›</a></li>
+          <li><a href="keys-onlajn-konferenciya-psihologiya.html">Кейс: онлайн-образование по психологии ›</a></li>
+          <li><a href="keys-b2b-konferenciya-laboratorii.html">Кейс: B2B-конференция ›</a></li>
+          <li><a href="keys-onlajn-kurs-sadovodstvo.html">Кейс: онлайн-образование, садоводство ›</a></li>
         </ul></div>
       </details>
     </div>
